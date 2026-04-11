@@ -22,7 +22,33 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <nav className="border-zinc-300 border-b-2">
+          <div className="bg-gray-800 flex justify-between p-4 items-center">
+            <h1>
+              <span className="text-2xl text-red-600 font-bold">N</span>ext.js
+              Cepeda
+            </h1>
+            <div className="flex gap-4">
+              <a href=".">Inicio</a>
+              <a href="/about">About</a>
+              <a href="/blog">Blog</a>
+              <a href="/notes">Notes</a>
+            </div>
+          </div>
+        </nav>
+
+        {children}
+
+        <footer className="border-zinc-300 border-t-2">
+          <div className="bg-gray-900 flex mx-auto justify-center p-4 items-center">
+            <h1 className="text-zinc-500">
+              <span className="text-2xl text-red-900 font-bold">N</span>ext.js
+              Cepeda
+            </h1>
+          </div>
+        </footer>
+      </body>
     </html>
   );
 }
