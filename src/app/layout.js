@@ -25,56 +25,64 @@ export default function RootLayout({ children }) {
     >
       <body className="flex flex-col min-h-screen">
         <nav className="border-b-2 border-black">
-          <div className="bg-cielo flex justify-between p-4 items-center relative overflow-hidden text-capuchino">
-            <div className="bg-fondo w-40 h-70 absolute rotate-45 left-0"></div>
+          <div className="bg-cyan-500 flex justify-between p-4 items-center relative text-capuchino overflow-hidden">
+            <div className="bg-zinc-800 w-40 h-40 absolute rotate-45 left-0"></div>
             <h1 className="text-lg z-1 text-crema">
               <span className="text-2xl text-red-600 font-bold">N</span>ext.js
               Cepeda
             </h1>
 
             {/* links */}
+
             <div className="flex gap-5 text-lg text-white font-sans relative">
               {/*link Inicio */}
               <div className="flex group">
                 <Link
                   href="."
-                  className="text-center px-3.5 transition-all duration-300 group-hover:text-capuchino rounded-full z-10"
+                  className="text-center px-3 transition-all duration-300 group-hover:text-capuchino rounded-full z-10 relative"
                 >
-                  Inicio
+                  <span className="text-white relative z-10 transition-all duration-300 group-hover:text-capuchino font-medium ml-2">
+                    Inicio
+                  </span>
+                  <div className="bg-green-700 w-35 h-35 -mt-35 -right-8.5 absolute rotate-45 transition-all duration-300 group-hover:bg-white group-hover:text-capuchino cursor-pointer z-0"></div>
                 </Link>
-                <div className="bg-green-900 w-35 h-60 absolute -rotate-45 -my-3.5 transition-all duration-300 group-hover:bg-white group-hover:text-capuchino cursor-pointer"></div>
+              </div>
+              {/*link about */}
+              <div className="flex group">
+                <Link
+                  href="/about"
+                  className="text-center px-3 transition-all duration-300 group-hover:text-capuchino rounded-full z-10 relative"
+                >
+                  <span className="text-white relative z-10 transition-all duration-300 group-hover:text-capuchino font-medium ml-2">
+                    About
+                  </span>
+                  <div className="bg-green-600 w-35 h-35 absolute rotate-45 -mt-8 -right-8 transition-all duration-300 group-hover:bg-white group-hover:text-capuchino cursor-pointer z-0"></div>
+                </Link>
               </div>
               {/*link Blog */}
               <div className="flex group">
                 <Link
                   href="/blog"
-                  className=" text-center px-4  transition-all duration-300 group-hover:text-capuchino rounded-full z-10"
+                  className="text-center px-3 transition-all duration-300 group-hover:text-capuchino rounded-full z-10 relative"
                 >
-                  Blog
+                  <span className="text-white relative z-10 transition-all duration-300 group-hover:text-capuchino font-medium ml-2">
+                    Blogs
+                  </span>
+                  <div className="bg-green-500 w-35 h-35 -mt-35 -right-8 absolute rotate-45 transition-all duration-300 group-hover:bg-white group-hover:text-capuchino cursor-pointer z-0"></div>
                 </Link>
-                <div className="bg-green-800 w-35 h-60 absolute rotate-45 bottom-0 -my-2.5 transition-all duration-300 group-hover:bg-white group-hover:text-capuchino cursor-pointer"></div>
               </div>
-              {/*link About */}
+              {/*este notas */}
               <div className="flex group">
                 <Link
-                  href="/about"
-                  className="text-center px-3 transition-all duration-300 group-hover:text-capuchino rounded-full z-10"
+                  href="/notes"
+                  className="text-center px-3 transition-all duration-300 group-hover:text-capuchino rounded-full z-10 relative"
                 >
-                  About
+                  <span className="text-white relative z-10 transition-all duration-300 group-hover:text-capuchino font-medium ml-2">
+                    Notas
+                  </span>
+                  <div className="bg-green-400 w-35 h-35 absolute rotate-45 -mt-8 -right-8 transition-all duration-300 group-hover:bg-white group-hover:text-capuchino cursor-pointer z-0"></div>
                 </Link>
-                <div className="bg-green-700 w-35 h-60 absolute -rotate-45 -my-3 transition-all duration-300 group-hover:bg-white group-hover:text-capuchino cursor-pointer"></div>
               </div>
-              {/*link Notas */}
-              <div className="flex group">
-                <Link
-                  href="/notas"
-                  className=" text-center px-3 transition-all duration-300 group-hover:text-capuchino rounded-full z-10"
-                >
-                  Notas
-                </Link>
-                <div className="bg-green-600 w-35 h-60 absolute rotate-45 bottom-0 -my-3 transition-all duration-300 group-hover:bg-white group-hover:text-capuchino cursor-pointer"></div>
-              </div>
-              <div className="bg-green-500 w-35 h-60 absolute -rotate-45 -right-40 -my-3 transition-all duration-300 hover:bg-white hover:text-capuchino cursor-pointer"></div>
             </div>
           </div>
         </nav>

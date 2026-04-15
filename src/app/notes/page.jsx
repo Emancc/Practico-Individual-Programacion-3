@@ -17,18 +17,22 @@ export default function Notes() {
             Create Notes
           </Link>
         </div>
-        <section className="bg-zinc-800 w-full h-64 p-6 my-8 rounded-lg flex flex-col justify-between text-white">
+        <section className="bg-carbon w-full h-64 p-6 my-8 rounded-lg flex flex-col justify-between text-white">
           <div>
-            <h1 className="font-semibold text-2xl mb-2">Componentes</h1>
+            <h1 className="font-semibold text-2xl mb-2  bg-red-500 p-4 rounded-2xl">
+              Componentes
+            </h1>
             <p className="ml-2">- Notas sobre como funcionan mis componentes</p>
           </div>
           <Link href={"/notes/1"} className="text-blue-500 hover:underline">
             Ver Nota
           </Link>
         </section>
-        <section className="bg-zinc-800 w-full h-64 p-6 my-8 rounded-lg flex flex-col justify-between text-white">
+        <section className="bg-carbon w-full h-64 p-6 my-4 rounded-lg flex flex-col justify-between">
           <div>
-            <h1 className="font-semibold text-2xl mb-2">Routes</h1>
+            <h1 className="font-semibold text-2xl mb-2 bg-red-500 p-4 rounded-2xl">
+              Routes
+            </h1>
             <p className="ml-2">- Notas sobre como funcionan mis componentes</p>
           </div>
           <Link href={"/notes/2"} className="text-blue-500 hover:underline">
@@ -36,9 +40,11 @@ export default function Notes() {
           </Link>
         </section>
 
-        <section className="bg-zinc-800 w-full h-64 p-6 my-8 rounded-lg flex flex-col justify-between text-white">
+        <section className="bg-carbon w-full h-64 p-6 my-8 rounded-lg flex flex-col justify-between text-white">
           <div>
-            <h1 className="font-semibold text-2xl mb-2">Layouts</h1>
+            <h1 className="font-semibold text-2xl mb-2  bg-red-500 p-4 rounded-2xl">
+              Layouts
+            </h1>
             <p className="ml-2">- Notas sobre como funcionan mis componentes</p>
           </div>
           <Link href={"/notes/3"} className="text-blue-500 hover:underline">
